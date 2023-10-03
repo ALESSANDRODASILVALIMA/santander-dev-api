@@ -8,14 +8,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity(name = "tb_Card")
+@Entity(name = "tb_Cards")
 public class Card {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String number;
-    @Column(name = "limit_card")
+    @Column(name = "limit_card", scale = 2, precision = 13)
     private BigDecimal limit;
     public Long getId() {
         return id;

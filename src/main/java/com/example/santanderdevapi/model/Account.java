@@ -19,7 +19,8 @@ public class Account {
     private String number;
     private String Agency;
 
-    @Column(scale = 13, precision = 2)
+    //scale = 2, precision = 13 = 99.999.999.999,99
+    @Column(scale = 2, precision = 13)
     private BigDecimal Balance;
     
     @Column(name = "Limit_account")
