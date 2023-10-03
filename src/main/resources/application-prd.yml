@@ -1,10 +1,11 @@
 spring:
     datasource:
-        url: jdbc:postgresql://containers-us-west-115.railway.app:6169/railway
+        url: jdbc:postgresql://containers-us-west-133.railway.app:5801/railway
         username: postgres
-        password: GkIrr9p0116G4nU1Lcnq
+        password: 8U1PEkLh9OuviRtsaznL
     jpa:
         open-in-view: false
         hibernate:
+            #ddl-auto: create
             #ddl-auto: create
             ddl-auto: validate
